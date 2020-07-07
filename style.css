@@ -1,0 +1,44 @@
+.stage{
+    height: 400px;
+    background-image: linear-gradient(#363b74, #673888, #ef4f91, #c79dd7, #4d1b7b);
+    position: relative;
+}
+.sun{
+    width: 70px;
+    height: 70px;
+    background-color:yellow;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.stage:hover .sun{
+    animation: sunset 10s ease-in-out 1s infinite;
+}
+@keyframes sunset{
+    0%{
+        left: 0;
+        bottom: 0;
+        background-color: #fd6051;
+    }
+    25%{
+        left: 300px;
+        bottom: 90px;
+        background-color: #ff8967;
+    }
+    50%{
+        left: 480px;
+        bottom: 160px;
+        background-color:#fd2f24;
+    }
+    75%{
+        left: 660px;
+        bottom: 230px;
+        background-color: #fec051;
+    }
+    100%{
+        left: 920px;
+        bottom: 300px;
+        background-color: #ffe577;
+    }
+}
